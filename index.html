@@ -355,7 +355,7 @@ body.ready .hero h1 .word:nth-child(5) i{transition-delay:.24s}
 .p-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;min-height:14px;font-family:"JetBrains Mono",monospace;
   font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
 .p-meta i{font-style:normal;color:var(--ink-soft);border:1px solid var(--line-strong);border-radius:100px;padding:3px 9px;letter-spacing:.08em}
-.p-name{display:block;margin-top:8px;font-weight:500;font-size:clamp(21px,2.2vw,27px);letter-spacing:-.015em;line-height:1.14;transition:color .25s}
+.p-name{display:block;margin-top:9px;font-family:"Questrial","Century Gothic","Avenir Next",system-ui,sans-serif;font-weight:400;font-size:clamp(19px,1.9vw,23px);letter-spacing:.035em;line-height:1.2;color:var(--ink);transition:color .25s}
 .prod summary:hover .p-name{color:var(--accent)}
 .p-lead{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:8px;
   color:var(--ink-soft);font-size:15px;line-height:1.62;max-width:64ch}
@@ -462,6 +462,12 @@ body.ready .hero h1 .word:nth-child(5) i{transition-delay:.24s}
 .stat-i .n{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(34px,4.4vw,58px);line-height:1;letter-spacing:-.02em}
 .stat-i .n em{font-style:normal;color:var(--accent);font-size:.55em}
 .stat-i .l{margin-top:10px;color:var(--muted);font-size:14px;max-width:22ch}
+.stat-link{display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding-bottom:3px;
+  font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--accent);
+  border-bottom:1px solid rgba(var(--accent-rgb),.35);transition:border-color .25s,color .25s}
+.stat-link .arr{transition:transform .3s var(--ease)}
+.stat-link:hover{border-color:var(--accent)}
+.stat-link:hover .arr{transform:translate(2px,-2px)}
 @media(max-width:900px){.proc-grid{grid-template-columns:1fr}.proc-left{position:static}}
 @media(max-width:700px){.stats{grid-template-columns:1fr}}
 
@@ -786,7 +792,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 326126-0005</span></span>
-              <span class="p-name serif">RINDAVITAL ENERGIETRUNK</span>
+              <span class="p-name">RINDAVITAL ENERGIETRUNK</span>
               <span class="p-lead">Ειδικό προϊόν για την υποστήριξη της ενεργειακής κάλυψης και των μεταβολικών διεργασιών της αγελάδας τις πρώτες ώρες μετά τον τοκετό.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -803,7 +809,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 237816-0000</span></span>
-              <span class="p-name serif">TIRSANA 1312 EU</span>
+              <span class="p-name">TIRSANA 1312 EU</span>
               <span class="p-lead">Στοχευμένη χορήγηση υγρών ενεργειακών συστατικών και βιταμίνης B<sub>12</sub> αμέσως μετά τον τοκετό, για ασφαλή έναρξη της γαλακτοπαραγωγής.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -828,7 +834,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 231384-0030</span></span>
-              <span class="p-name serif">RINDAMIN 260 BASIC</span>
+              <span class="p-name">RINDAMIN 260 BASIC</span>
               <span class="p-lead">Δοσολογία: 200-250 gr για αγελάδες γαλακτοπαραγωγής, 100 gr για ταύρους.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -843,7 +849,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 326195-0030</span></span>
-              <span class="p-name serif">RINDAVIT TMR 91</span>
+              <span class="p-name">RINDAVIT TMR 91</span>
               <span class="p-lead">Είναι ένας ισορροπιστής αγελάδων γαλακτοπαραγωγής ειδικός για ολικά σιτηρέσια TMR (Total Mix rations).</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -860,7 +866,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 326434-0030</span><i>Συμπυκνωμένο</i></span>
-              <span class="p-name serif">RINDAVIT K 11 ATG</span>
+              <span class="p-name">RINDAVIT K 11 ATG</span>
               <span class="p-lead">Συμπυκνωμένος ισορροπιστής για γαλακτοπαραγωγές αγελάδες με σύμπλοκο δραστικών συστατικών RumiVital i, χηλικό σύμπλοκο ιχνοστοιχείων ATG και OVIN-S Complex.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -876,7 +882,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 326265-0030</span><i>Συμπυκνωμένο</i></span>
-              <span class="p-name serif">RINDAVIT K11 ASS-CO ATG</span>
+              <span class="p-name">RINDAVIT K11 ASS-CO ATG</span>
               <span class="p-lead">Η <strong>καινοτόμος</strong> ανόργανη συμπληρωματική ζωοτροφή για γαλακτοπαραγωγές αγελάδες <strong>RINDAVIT K 11 ASS-CO ATG</strong> είναι κάτι περισσότερο από μια απλή ανόργανη ζωοτροφή και καλύπτει τις ανάγκες των γαλακτοπαραγωγών αγελάδων υψηλής απόδοσης σε όλες τις δραστικές ουσίες.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -897,7 +903,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 326156-0025</span></span>
-              <span class="p-name serif">RINDAVITAL VK</span>
+              <span class="p-name">RINDAVITAL VK</span>
               <span class="p-lead">Ειδικός ισορροπιστής για διατροφή αγελάδων στην 1η και 2η φάση της ξηράς περιόδου, πλούσιος σε βιταμίνη E και μαγνήσιο.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -923,7 +929,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 236202-0100</span></span>
-              <span class="p-name serif">SCHAUMANN LECKMASSE</span>
+              <span class="p-name">SCHAUMANN LECKMASSE</span>
               <span class="p-lead">Η SCHAUMANN-LECKMASSE προσφέρεται στις γαλακτοπαραγωγές αγελάδες και στα νεαρά βοοειδή για ελεύθερη πρόσληψη.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -938,7 +944,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 236204-0065</span><i>65 κιλά</i></span>
-              <span class="p-name serif">RINDAVIT PRE-LICK ATG</span>
+              <span class="p-name">RINDAVIT PRE-LICK ATG</span>
               <span class="p-lead">Γλειφόμενο μείγμα για αγελάδες ξηράς περιόδου.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -953,7 +959,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 237926</span></span>
-              <span class="p-name serif">RINDAMIN JUNIOR LICK ATG</span>
+              <span class="p-name">RINDAMIN JUNIOR LICK ATG</span>
               <span class="p-lead">Το RINDAMIN JUNIOR LICK ATG χορηγείται σε νεαρά βοοειδή κατά βούληση.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -978,7 +984,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 326335</span></span>
-              <span class="p-name serif">RINDAMIN BP</span>
+              <span class="p-name">RINDAMIN BP</span>
               <span class="p-lead">Ειδικό παρασκεύασμα για χρήση κατά τις θερμές περιόδους του χρόνου, για την αναπλήρωση των ηλεκτρολυτών και για σταθεροποίηση της παραγωγής και ρύθμιση του pH της μεγάλης κοιλίας.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1012,7 +1018,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 902237-0001</span></span>
-              <span class="p-name serif">KALBI-FERM</span>
+              <span class="p-name">KALBI-FERM</span>
               <span class="p-lead">Ισχυρό βελτιωτικό πλήρους γάλακτος για την ενίσχυση του ανοσοποιητικού συστήματος. Μειώνει τον κίνδυνο απωλειών μόσχων.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1030,7 +1036,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 238014-0000</span></span>
-              <span class="p-name serif">KALBI VITAL</span>
+              <span class="p-name">KALBI VITAL</span>
               <span class="p-lead">Για φάρμες που θέλουν να παρέχουν μία πάστα προβιοτικού στις πρώτες 6-8 εβδομάδες κατά τη διάρκεια της γαλουχίας.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1048,7 +1054,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 238035</span></span>
-              <span class="p-name serif">KALBI FLOCS PLUS NG</span>
+              <span class="p-name">KALBI FLOCS PLUS NG</span>
               <span class="p-lead">Η πρώτη στερεά τροφή με ειδικά εύπεπτα συστατικά.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1069,7 +1075,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 238037</span></span>
-              <span class="p-name serif">KALVICIN mineral</span>
+              <span class="p-name">KALVICIN mineral</span>
               <span class="p-lead">Συμπλήρωμα ανόργανων στοιχείων και δραστικών συστατικών για το ιδιοπαραγόμενο, υψηλής ποιότητας μείγμα ανάπτυξης μοσχαριών.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1086,7 +1092,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 238055-0025</span></span>
-              <span class="p-name serif">KALBI MILCH TOP</span>
+              <span class="p-name">KALBI MILCH TOP</span>
               <span class="p-lead">Υποκατάστατο γάλακτος για τον εντατικό πρώιμο απογαλακτισμό με 50% σκόνη αποβουτυρωμένου γάλακτος.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1116,7 +1122,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 326459-0025</span></span>
-              <span class="p-name serif">RINDAMAST UNI</span>
+              <span class="p-name">RINDAMAST UNI</span>
               <span class="p-lead">Ολοκληρωμένη παροχή ανόργανων στοιχείων και βιταμινών για την αξιοποίηση του παραγωγικού δυναμικού.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1132,7 +1138,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 237531-0025</span></span>
-              <span class="p-name serif">RINDAMAST UNI RVb ATG</span>
+              <span class="p-name">RINDAMAST UNI RVb ATG</span>
               <span class="p-lead">Όλα τα ανόργανα στοιχεία, οι βιταμίνες και τα ιχνοστοιχεία, συμπεριλαμβανομένου του θείου, για υψηλές ημερήσιες αυξήσεις βάρους.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1177,7 +1183,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 322855</span><i>Γενικής χρήσης</i></span>
-              <span class="p-name serif">MILLAPHOS PRO</span>
+              <span class="p-name">MILLAPHOS PRO</span>
               <span class="p-lead">Ο βασικός/παραγωγικός ισορροπιστής γαλακτοπαραγωγής, προσανατολισμένος στη συνολική κάλυψη του κοπαδιού.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1194,7 +1200,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 322806</span><i>Υψηλή γαλακτοπαραγωγή</i></span>
-              <span class="p-name serif">MILLAPHOS Z</span>
+              <span class="p-name">MILLAPHOS Z</span>
               <span class="p-lead">Ισορροπιστής με ενισχυμένο Φώσφορο για τη διόρθωση και εξισορρόπηση της αναλογίας Ca:P, για πρόβατα υψηλής γαλακτοπαραγωγής.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1211,7 +1217,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 322927-0025</span><i>Premium</i></span>
-              <span class="p-name serif">MILLAPHOS Z 15 RVI ATG</span>
+              <span class="p-name">MILLAPHOS Z 15 RVI ATG</span>
               <span class="p-lead">Η κορυφαία (premium) έκδοση της σειράς, σχεδιασμένη για μέγιστη προστασία του πεπτικού συστήματος και εξαιρετικές αποδόσεις ακόμη και σε δύσκολες συνθήκες.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1230,7 +1236,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 232820</span><i>Αίγες</i></span>
-              <span class="p-name serif">MILLAPHOS ZIEGENGOLD</span>
+              <span class="p-name">MILLAPHOS ZIEGENGOLD</span>
               <span class="p-lead">Ανόργανη ζωοτροφή προσαρμοσμένη στις ανάγκες των γαλακτοπαραγωγών αιγών — για κατσίκες γαλακτοπαραγωγής.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1257,7 +1263,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 232913</span><i>Πράσινο καπάκι</i></span>
-              <span class="p-name serif">MILLAPHOS LECKSCHALE ATG</span>
+              <span class="p-name">MILLAPHOS LECKSCHALE ATG</span>
               <span class="p-lead">Γλειφόμενη μάζα για πρόβατα και αίγες, γενικής χρήσης. Βέλτιστη κάλυψη όλων των σημαντικών ανόργανων στοιχείων.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1273,7 +1279,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 232916</span><i>Κόκκινο καπάκι</i></span>
-              <span class="p-name serif">MILLAPHOS LICK ATG SPEZIAL</span>
+              <span class="p-name">MILLAPHOS LICK ATG SPEZIAL</span>
               <span class="p-lead">Γλειφόμενη μάζα για πρόβατα με β-καροτένιο, για την αναπαραγωγική περίοδο.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1303,7 +1309,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 902831</span><i>Υποκατάστατο γάλακτος</i></span>
-              <span class="p-name serif">SCHAUMANN LAMB-MILK</span>
+              <span class="p-name">SCHAUMANN LAMB-MILK</span>
               <span class="p-lead">Υποκατάστατο γάλακτος για αμνούς. Γάλα 50-άρι σε σκόνη υψηλής ποιότητας, με πηγή πρωτεΐνης και λίπους ανώτερης ποιότητας.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1319,7 +1325,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 322823</span><i>Μικρά αρνάκια</i></span>
-              <span class="p-name serif">MILLAPHOS L</span>
+              <span class="p-name">MILLAPHOS L</span>
               <span class="p-lead">Ισορροπιστής μεγάλης δραστικής ικανότητας για πάχυνση αμνοεριφίων.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1352,7 +1358,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 235495-0030</span></span>
-              <span class="p-name serif">SCHAUMASAN BASIS</span>
+              <span class="p-name">SCHAUMASAN BASIS</span>
               <span class="p-lead">Συνδυάζει ανόργανα δεσμευτικά, όπως ο μπεντονίτης και ο κλινοπτιλόλιθος, με οργανικά δεσμευτικά, όπως το Ceragel.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1368,7 +1374,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 235997-0025</span></span>
-              <span class="p-name serif">SCHAUMASAN CONTROL</span>
+              <span class="p-name">SCHAUMASAN CONTROL</span>
               <span class="p-lead">Σε περιπτώσεις υψηλότερου φορτίου μυκοτοξινών κατά την πάχυνση, η βασική κάλυψη δεν επαρκεί, καθώς τα ζώα αυτά είναι γενικά περισσότερο εκτεθειμένα και, επομένως, πιο ευάλωτα.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1395,7 +1401,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><span>Κωδ. 275784</span></span>
-              <span class="p-name serif">SCHAUMASIL TMR UNI</span>
+              <span class="p-name">SCHAUMASIL TMR UNI</span>
               <span class="p-lead">Σταθεροποίηση TMR, εξαιρετική γευστικότητα και βελτιωμένη παροχή ενέργειας.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1411,7 +1417,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
           <summary>
             <span class="p-head">
               <span class="p-meta"><i>Υγρό</i></span>
-              <span class="p-name serif">SCHAUMASIL 5.0 ΥΓΡΟ</span>
+              <span class="p-name">SCHAUMASIL 5.0 ΥΓΡΟ</span>
               <span class="p-lead">Φιλικό προς τα υλικά, εύχρηστο και χωρίς άζωτο.</span>
             </span>
             <span class="acc-ico" aria-hidden="true"></span>
@@ -1464,7 +1470,7 @@ footer{background:var(--inverse-surface);color:var(--inverse-text);border-top:1p
     <div class="stats">
       <div class="stat-i" data-reveal><p class="n serif" data-count="40"><span>0</span><em>+</em></p><p class="l">Συνεργαζόμενες εκτροφές</p></div>
       <div class="stat-i" data-reveal data-d="1"><p class="n serif" data-count="30"><span>0</span></p><p class="l">Προϊόντα στον κατάλογο</p></div>
-      <div class="stat-i" data-reveal data-d="2"><p class="n serif" data-count="85"><span>0</span><em>+</em></p><p class="l">Χρόνια έρευνας πίσω από τη Schaumann</p></div>
+      <div class="stat-i" data-reveal data-d="2"><p class="n serif" data-count="85"><span>0</span><em>+</em></p><p class="l">Χρόνια έρευνας πίσω από τη Schaumann</p><a class="stat-link" href="https://www.schaumann.de/" target="_blank" rel="noopener">schaumann.de <span class="arr" aria-hidden="true">&#8599;</span><span class="sr-only"> (ανοίγει σε νέα καρτέλα)</span></a></div>
     </div>
   </div>
 </section>
